@@ -1,4 +1,4 @@
-const ClosurePlugin = require('closure-webpack-plugin');
+const ClosurePlugin = require('@ngageoint/closure-webpack-plugin');
 const path = require('path');
 
 module.exports = (env, argv) => {

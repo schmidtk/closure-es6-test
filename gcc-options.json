@@ -36,7 +36,6 @@
     "strictPrimitiveOperators",
     "suspiciousCode",
     "typeInvalidation",
-    "undefinedNames",
     "undefinedVars",
     "underscore",
     "unknownDefines",
@@ -49,5 +48,12 @@
   "jscomp_warning": [
     "deprecated"
   ],
-  "compilation_level": "ADVANCED"
+  "compilation_level": "ADVANCED",
+  "module_resolution": "NODE",
+  "extra_annotation_name": [
+    "api"
+  ],
+  "hide_warnings_for": [
+    "/ol/"
+  ]
 }

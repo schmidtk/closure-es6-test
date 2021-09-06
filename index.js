@@ -1,11 +1,10 @@
-import hello from './src/hello.js';
+import {sayHello, setDefaultName} from './src/hello.js';
+import {createMap} from './src/createMap.js';
 
-hello.sayHello();
-
-// Change the default name with ES6 setter. This works with Webpack only, but Closure optimizes this line out.
-hello.defaultName = 'Alan';
-hello.sayHello();
+sayHello();
 
 // Change the default name with function.
-hello.setDefaultName('Steve');
-hello.sayHello();
+setDefaultName('Steve');
+sayHello();
+
+createMap('map');
