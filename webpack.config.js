@@ -16,11 +16,18 @@ module.exports = (env, argv) => {
     },
     module: {
       rules: [
+        // Strip all comments from ol source files, because the JSDoc is not supported by Closure
         {
           test: /\/ol\/src\//,
           use: 'webpack-strip-comments',
         }
       ]
+    },
+    resolve: {
+      alias: {
+        // Alias ol -> ol/src to reference untranspiled ES modules
+        ol: path.dirname(require.resolve('ol/src'))
+      }
     },
     devtool: isProduction ? 'source-map' : 'eval',
     watch: !isProduction,

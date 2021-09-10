@@ -1,9 +1,9 @@
 goog.module('createMapTyped');
 
-const Map = /** @type {ol.MapClass} */ (require('ol/src/Map').default);
-const View = /** @type {ol.ViewClass} */ (require('ol/src/View').default);
-const Tile = /** @type {ol.layer.TileClass} */ (require('ol/src/layer/Tile').default);
-const OSM = /** @type {ol.source.OSMClass} */ (require('ol/src/source/OSM').default);
+const Map = /** @type {ol.MapClass} */ (require('ol/Map').default);
+const View = /** @type {ol.ViewClass} */ (require('ol/View').default);
+const Tile = /** @type {ol.layer.TileClass} */ (require('ol/layer/Tile').default);
+const OSM = /** @type {ol.source.OSMClass} */ (require('ol/source/OSM').default);
 
 /**
  * Create an OpenLayers map.

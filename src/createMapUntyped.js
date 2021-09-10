@@ -1,9 +1,9 @@
 goog.declareModuleId('createMapUntyped');
 
-import Map from 'ol/src/Map';
-import View from 'ol/src/View';
-import Tile from 'ol/src/layer/Tile';
-import OSM from 'ol/src/source/OSM';
+import Map from 'ol/Map';
+import View from 'ol/View';
+import Tile from 'ol/layer/Tile';
+import OSM from 'ol/source/OSM';
 
 /**
  * Create an OpenLayers map.
