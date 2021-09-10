@@ -1,3 +1,5 @@
+goog.declareModuleId('createMapUntyped');
+
 import Map from 'ol/src/Map';
 import View from 'ol/src/View';
 import Tile from 'ol/src/layer/Tile';

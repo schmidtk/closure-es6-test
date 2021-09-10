@@ -55,6 +55,7 @@
     "api"
   ],
   "hide_warnings_for": [
+    "/google-closure-library/",
     "/ol/",
     "/rbush/"
   ],

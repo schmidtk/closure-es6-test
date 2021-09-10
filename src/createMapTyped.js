@@ -1,3 +1,5 @@
+goog.module('createMapTyped');
+
 const Map = /** @type {ol.MapClass} */ (require('ol/src/Map').default);
 const View = /** @type {ol.ViewClass} */ (require('ol/src/View').default);
 const Tile = /** @type {ol.layer.TileClass} */ (require('ol/src/layer/Tile').default);
@@ -8,7 +10,7 @@ const OSM = /** @type {ol.source.OSMClass} */ (require('ol/src/source/OSM').defa
  * @param {string} target The target ID.
  * @return {!ol.Map} The map.
  */
-export const createMapTyped = (target) => {
+const createMapTyped = (target) => {
   const map = new Map({
     view: new View({
       center: [0, 0],
@@ -24,3 +26,5 @@ export const createMapTyped = (target) => {
 
   return map;
 };
+
+exports = {createMapTyped};

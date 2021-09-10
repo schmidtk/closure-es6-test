@@ -17,6 +17,7 @@
     "webpack-strip-comments": "schmidtk/webpack-strip-comments"
   },
   "dependencies": {
+    "google-closure-library": "^20210406.0.0",
     "ol": "^6.6.1"
   }
 }
