@@ -8,7 +8,6 @@
     "conformanceViolations",
     "const",
     "constantProperty",
-    "deprecated",
     "deprecatedAnnotations",
     "duplicateMessage",
     "es5Strict",
@@ -21,7 +20,6 @@
     "missingPolyfill",
     "missingProperties",
     "missingProvide",
-    "missingRequire",
     "missingReturn",
     "missingSourcesWarnings",
     "moduleLoad",
@@ -29,13 +27,11 @@
     "nonStandardJsDocs",
     "partialAlias",
     "polymer",
-    "reportUnknownTypes",
-    "strictCheckTypes",
-    "strictMissingProperties",
     "strictModuleDepCheck",
     "strictPrimitiveOperators",
     "suspiciousCode",
     "typeInvalidation",
+    "undefinedNames",
     "undefinedVars",
     "underscore",
     "unknownDefines",
@@ -48,12 +44,21 @@
   "jscomp_warning": [
     "deprecated"
   ],
+  "jscomp_off": [
+    "missingRequire",
+    "reportUnknownTypes",
+    "strictCheckTypes",
+    "strictMissingProperties"
+  ],
   "compilation_level": "ADVANCED",
-  "module_resolution": "NODE",
   "extra_annotation_name": [
     "api"
   ],
   "hide_warnings_for": [
-    "/ol/"
+    "/ol/",
+    "/rbush/"
+  ],
+  "externs": [
+    "externs/ol.js"
   ]
 }

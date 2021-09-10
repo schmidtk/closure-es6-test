@@ -13,6 +13,14 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, 'dist'),
       filename: 'app.js'
     },
+    module: {
+      rules: [
+        {
+          test: /\/ol\/src\//,
+          use: 'webpack-strip-comments',
+        }
+      ]
+    },
     devtool: isProduction ? 'source-map' : 'eval',
     watch: !isProduction,
     optimization: {

@@ -1,10 +1,5 @@
-import {sayHello, setDefaultName} from './src/hello.js';
-import {createMap} from './src/createMap.js';
+import {createMapTyped} from './src/createMapTyped.js';
+import {createMapUntyped} from './src/createMapUntyped.js';
 
-sayHello();
-
-// Change the default name with function.
-setDefaultName('Steve');
-sayHello();
-
-createMap('map');
+createMapTyped('map1');
+createMapUntyped('map2');

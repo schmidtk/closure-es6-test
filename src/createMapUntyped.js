@@ -1,6 +1,6 @@
 import Map from 'ol/src/Map';
 import View from 'ol/src/View';
-import TileLayer from 'ol/src/layer/Tile';
+import Tile from 'ol/src/layer/Tile';
 import OSM from 'ol/src/source/OSM';
 
 /**
@@ -8,15 +8,15 @@ import OSM from 'ol/src/source/OSM';
  * @param {string} target The target ID.
  * @return {!Map} The map.
  */
-export const createMap = (target) => {
+export const createMapUntyped = (target) => {
   const map = new Map({
     view: new View({
       center: [0, 0],
       zoom: 1
     }),
     layers: [
-      new TileLayer({
-        source: new OSM()
+      new Tile({
+        source: new OSM({})
       })
     ],
     target
