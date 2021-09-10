@@ -16,7 +16,7 @@ export const createMapTyped = (target) => {
     }),
     layers: [
       new Tile({
-        source: new OSM({})
+        source: new OSM()
       })
     ],
     target
