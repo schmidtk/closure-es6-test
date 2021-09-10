@@ -72,6 +72,11 @@ ol.MapClass;
 ol.Map = function(options) {};
 
 /**
+ * @return {ol.View}
+ */
+ol.Map.prototype.getView = function() {};
+
+/**
  * Object literal with config options for the view.
  * @typedef {{
  *   center: (ol.Coordinate|undefined),
@@ -101,6 +106,11 @@ ol.ViewClass;
  * @constructor
  */
 ol.View = function(opt_options) {};
+
+/**
+ * @return {ol.Coordinate}
+ */
+ol.View.prototype.getCenter = function() {};
 
 /**
  * @const
