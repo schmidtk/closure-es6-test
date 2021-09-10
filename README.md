@@ -1,12 +1,12 @@
-Testing ES6 support with the Closure Compiler.
+Testing OL with the Closure Compiler.
 
 ```
 # Install dependencies.
-npm install
+npm i
 
-# Build with webpack only, not optimized with GCC.
+# Dev build.
 npm run dev
 
-# Build with the Closure Compiler. Uses options in gcc-options.json.
+# Compiled build.
 npm run build
 ```
