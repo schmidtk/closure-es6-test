@@ -12,7 +12,7 @@
   "devDependencies": {
     "@ngageoint/closure-webpack-plugin": "^2.0.0",
     "google-closure-compiler": "^20210406.0.0",
-    "webpack": "^4.46.0",
+    "webpack": "^5.75.0",
     "webpack-cli": "^4.3.1",
     "webpack-strip-comments": "schmidtk/webpack-strip-comments"
   },
